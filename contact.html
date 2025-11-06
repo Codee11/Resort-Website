@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Paradise Resort</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #003366;
+    }
+    .navbar a {
+      color: #fff !important;
+    }
+    .contact-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    .map-container {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Paradise Resort</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Header -->
+  <section class="py-5 text-center bg-light">
+    <div class="container">
+      <h1 class="fw-bold">Contact Us</h1>
+      <p class="text-muted">We’d love to hear from you! Get in touch with us for reservations or inquiries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="contact-card">
+          <h4 class="fw-bold mb-3">Get in Touch</h4>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="contact-card">
+          <h4 class="fw-bold mb-3">Resort Address</h4>
+          <p><strong>Paradise Resort</strong><br>
+          123 Beachside Avenue, Goa, India<br>
+          📞 +91 98765 43210<br>
+          📧 contact@paradiseresort.com</p>
+
+          <div class="map-container mt-3">
+            <!-- You can replace the src link below with your resort’s actual location -->
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.624232705137!2d73.74072677412128!3d15.490930557431174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea6823a7e3ed%3A0x83f018a4a3b8c5f3!2sGoa!5e0!3m2!1sen!2sin!4v1698890567892!5m2!1sen!2sin"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Paradise Resort | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
